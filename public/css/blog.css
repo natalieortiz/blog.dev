@@ -1,0 +1,72 @@
+body {
+	background-color: rgb(248,248,248);
+}
+
+.btn {
+	margin-top: 20px;
+}
+
+.create_area{
+	background-color: white;
+	padding: 40px;
+	border-radius: 5px;
+	border: solid lightgrey 1px;
+}
+.dropdown-menu>li>a:hover {
+	color: rgb(355,63,96);
+}
+
+.form-control {
+	text-align: left;
+}
+
+main {
+	padding-top: 60px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	background-color: rgb(124,211,187) ;
+	color: white;
+	font-style: bold;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: rgb(355,63,96);
+	font-style: bold;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+.navstyle {
+	font-size: 1.2em;
+	background-color: white;
+	font-style: bold;
+}
+
+.navstyle a {
+	color: white;
+}
+
+.navbar-default .navbar-brand {
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;	
+	color: rgb(2,128,144);
+}
+
+.navbar-default .navbar-brand:hover {
+	color: rgb(2,128,144);
+}
+
+.post {
+	background-color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+	border: solid lightgrey 1px;
+}
