@@ -6,6 +6,21 @@
 
 @section('content')
 <main class="container-fluid">
+	@if ($posts->getCurrentPage() == 1)
+		<div class="col-md-12">
+			<div class="row">
+				<div class="header col-md-10 col-md-offset-1">
+					<div class="col-md-9">
+						<h1>Chasing Change</h1>
+					</div>
+					<div class="col-md-3">
+						<p>My name is Natalie.  I'm your basic nerd who loves Notre Dame, food, traveling, football, dogs and finding small adventures along the way.  This is my blog about my attempt at stepping outside my comfort zone. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	@endif
+
 	@foreach ($posts as $post)
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
