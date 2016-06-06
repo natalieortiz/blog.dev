@@ -71,10 +71,14 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function show($id)
-	{
-		$post = Post::find($id);
+	{	
+		try {
+			$post = Post::findOrFail($id);
+			return View::make('posts.show')->with('post', $post);
+		} catch (Exception $e) {
+			App::abort(404);
+		}
 
-		return View::make('posts.show')->with('post', $post);
 	}
 
 
