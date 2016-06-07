@@ -33,27 +33,11 @@ Route::get('/calculator', 'GameController@showCalculator');
 
 Route::resource('posts', 'PostsController');
 
-Route::get('orm-test', function ()
-{
-    $user1 = new User();
-	$user1->email = 'ndnatalie@gmail.com';
-	$user1->username  = 'ndnatalie';
-	$user1->password = 'mypassword';
-	$user1->save();
+Route::get('/login', 'HomeController@loginForm');
 
-	$user2 = new User();
-	$user2->email = 'ritawilbanks@yahoo.com';
-	$user2->username  = 'ritawilbanks';
-	$user2->password = 'password';
-	$user2->save();
+Route::post('/login', 'HomeController@doLogin');
 
-	$user3 = new User();
-	$user3->email = 'jwpearc2@gmail.com';
-	$user3->username  = 'jwpearc2';
-	$user3->password = 'password';
-	$user3->save();
-
-});
+Route::get('/logout', 'HomeController@doLogout');
 
 
 

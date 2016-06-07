@@ -11,7 +11,7 @@ class PostsController extends \BaseController {
         	)
         ));
 
-        $this->beforeFilter('auth.admin', 'only' => 'destroy');
+        // $this->beforeFilter('auth.admin', 'only' => 'destroy');
 
     }
 

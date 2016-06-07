@@ -11,8 +11,9 @@
 	<div class="col-md-10 col-md-offset-1">
 		<div class="post">
 			<h4>Title: {{{$post->title}}}</h4>
-			<h4>Content: </h4><p>{{{$post->content}}}</p>
+			<p>{{$post->content}}</p>
 			<h4>Categories: {{{$post->categories}}}</h4>
+			<h4>Written by: {{{ $post->user->username }}}</h4>
 			<a href="{{{ action('PostsController@edit', $post->id) }}}" class="btn btn-primary">Edit Post</a>
 		</div>	
 	</div>

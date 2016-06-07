@@ -33,27 +33,33 @@ class HomeController extends BaseController {
 	public function loginForm()
 	{
 		//Show form with 2 fields for submitting/loggin in
-		
-		//return form view
+		return View::make('login');
 
 	}
 
-	public function doLogin
+	public function doLogin()
 	{	
 		//Grab all input
-
+		$email = Input::get('email');
+		$password = Input::get('password');
 
 		//Validate input fields
+		$validator = Validator::make(Input::all(), User::$rules);
 
-		//Attempt login
-		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
-		    //flash message about sucessful login. 
-		    return Redirect::intended('/');
+		if ($validator->fails()) {
+			Session::flash('errorMessage','Email and Password are required.');
+			return Redirect::back()->withInput();
 
 		} else {
-		    // login failed, go back to the login screen
+			//Attempt login
+			if (Auth::attempt(array('email' => $email, 'password' => $password))) {
+			    Session::flash('successMessage','Login successful!'); 
+			    return Redirect::intended('posts');
+			} else {
+				Session::flash('errorMessage','Login info is incorrect!');
+			   return Redirect::back()->withInput();
+			}
 		}
-
 
 	}
 
@@ -61,8 +67,8 @@ class HomeController extends BaseController {
 	public function doLogout()
 	{
 		Auth::logout();
-		//Redirect
-		//flash mesasge
+		Session::flash('successMessage','You are logged out.');
+		return Redirect::action('HomeController@doLogin');
 	}
 
 	

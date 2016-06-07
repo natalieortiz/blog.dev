@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div class="navbar-brand">Chasing Change</div>
+      <div class="navbar-brand">Natalie Ortiz</div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,18 +31,22 @@
     <ul class="nav navbar-nav">
     </ul>
 		<ul class="nav navbar-nav navbar-right">
-		<li><a href="#">Link</a></li>
-		<li><a href="{{{ action('PostsController@index') }}}">Posts</a></li>
-		<li class="dropdown">
-		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Posts<span class="caret"></span></a>
-		  <ul class="dropdown-menu">
-		    <li><a href="{{{ action('PostsController@create') }}}">Create a Post</a></li>
-		    <li><a href="#">Another action</a></li>
-		    <li><a href="#">Something else here</a></li>
-		    <li role="separator" class="divider"></li>
-		    <li><a href="#">Logout</a></li>
-		  </ul>
-		</li>
+		@if (!Auth::check()) 
+			<li><a href="{{{ action('HomeController@loginForm') }}}">Login</a></li>
+		@endif 
+		<li><a href="{{{ action('PostsController@index') }}}">Home</a></li>
+		@if (Auth::check()) 
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+			    <li><a href="{{{ action('PostsController@create') }}}">Create a Post</a></li>
+			    <li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li role="separator" class="divider"></li>
+			    <li><a href="{{{ action('HomeController@doLogout') }}}">Logout</a></li>
+			  </ul>
+			</li>
+		@endif 
 		</ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -9,6 +9,11 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 
 	use UserTrait, RemindableTrait;
 
+	public static $rules = array(
+    'email'      => 'required',
+    'password'       => 'required'
+	);
+
 	/**
 	 * The database table used by the model.
 	 *
