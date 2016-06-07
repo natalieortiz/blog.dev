@@ -2,6 +2,19 @@
 
 class PostsController extends \BaseController {
 
+	public function __construct()
+    {
+        $this->beforeFilter('auth', array(
+        	'except' => array(
+        		'index' , 
+        		'show'
+        	)
+        ));
+
+        $this->beforeFilter('auth.admin', 'only' => 'destroy');
+
+    }
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -10,6 +23,9 @@ class PostsController extends \BaseController {
 	public function index()
 	{	
 		$posts = Post::paginate(4); 
+
+		//If you want to use eager loading; 
+		// $posts = Post::with('User')->get();
 
 		return View::make('posts.index')->with('posts', $posts);
 	}

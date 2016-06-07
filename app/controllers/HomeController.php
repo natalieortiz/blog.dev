@@ -30,5 +30,40 @@ class HomeController extends BaseController {
 		return View::make('portfolio');
 	}
 
+	public function loginForm()
+	{
+		//Show form with 2 fields for submitting/loggin in
+		
+		//return form view
+
+	}
+
+	public function doLogin
+	{	
+		//Grab all input
+
+
+		//Validate input fields
+
+		//Attempt login
+		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
+		    //flash message about sucessful login. 
+		    return Redirect::intended('/');
+
+		} else {
+		    // login failed, go back to the login screen
+		}
+
+
+	}
+
+	//GET
+	public function doLogout()
+	{
+		Auth::logout();
+		//Redirect
+		//flash mesasge
+	}
+
 	
 }
