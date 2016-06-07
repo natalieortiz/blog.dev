@@ -1,6 +1,6 @@
 <?php 
 
-class Post extends Eloquent 
+class Post extends BaseModel 
 {
 	
 	protected $table = "posts";
@@ -11,5 +11,10 @@ class Post extends Eloquent
     'categories' => 'max:1000'
 	);
 
+	//Tells Posts model that each one will belong to a specific user. 
+	public function user()
+	{
+	    return $this->belongsTo('User');
+	}
 
 }
