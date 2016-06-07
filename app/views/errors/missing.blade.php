@@ -7,6 +7,13 @@
 
 @section('content')
 <main class="container">
-	<h1>Page not found!</h1>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="missing_area">
+				<h1>Oh no!  Page is not found!</h1>
+				<img src="/img/kool-aid-man.gif">
+			</div>
+		</div>
+	</div>
 </main>
 @stop              

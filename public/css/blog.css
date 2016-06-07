@@ -60,6 +60,15 @@ main {
 	font-family: 'Raleway', sans-serif;
 }
 
+.missing_area{
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	font-weight: bold; 
+	border-radius: 5px;
+	border: solid lightgrey 1px;
+}
+
 .navbar-default .navbar-nav>li>a:hover {
 	background-color: rgb(124,211,187) ;
 	color: white;
