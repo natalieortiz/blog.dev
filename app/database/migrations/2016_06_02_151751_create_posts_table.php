@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration {
 			$table->text('categories')->nullable();
 			$table->timestamps();
 		});
+
 	}
 
 	/**
