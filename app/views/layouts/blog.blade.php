@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	@yield('favicon')
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>@yield('title')</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -40,8 +41,6 @@
 			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
 			  <ul class="dropdown-menu">
 			    <li><a href="{{{ action('PostsController@create') }}}">Create a Post</a></li>
-			    <li><a href="#">Another action</a></li>
-			    <li><a href="#">Something else here</a></li>
 			    <li role="separator" class="divider"></li>
 			    <li><a href="{{{ action('HomeController@doLogout') }}}">Logout</a></li>
 			  </ul>

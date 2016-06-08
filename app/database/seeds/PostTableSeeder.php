@@ -21,6 +21,7 @@ class PostTableSeeder extends Seeder
 
 			";
 		$post->categories = 'First Post';
+		$post->img_path = '/uploads/wand.jpg';
 		$post->user_id = User::first()->id; 
 		$post->created_at = '2016-06-01';
 		$post->save();
@@ -29,6 +30,7 @@ class PostTableSeeder extends Seeder
 		$post->title = 'Learning Laravel';
 		$post->content = "Since I've decided that I want to pursue a career in mostly back-end work, I have to say that I'm digging Laravel.  I like that it gives me a template to work in.  I like this whole framework existence.  After our last group project, in which we made our own framework, having Laravel as a tool is nice. I watched the Laracast for 4.2 over the weekend which just helped reiterate the concepts we learned in class but also makes me want to take a look at version 5 and beyond.";
 		$post->categories = 'Laravel';
+		$post->img_path = '/uploads/laravel.png';
 		$post->user_id = User::first()->id;
 		$post->save();
 	}

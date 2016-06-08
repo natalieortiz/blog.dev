@@ -32,7 +32,7 @@
 	<div class="col-md-10 col-md-offset-1">
 		<div class="create_area">
 		<h1>Edit Post</h1>
-		{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
+		{{ Form::model($post, array('action' => array('PostsController@update', $post->id),'files' => true, 'method' => 'PUT')) }}
 			<div class="form-group">
 			    {{ Form::label ('title', 'Title') }}
 				{{ Form::text('title', null, array('class'=> 'form-control')) }}
@@ -49,6 +49,10 @@
 		  		{{ Form::label ('categories', 'Categories') }}
 		  		{{ Form::text('categories', null, array('class'=> 'form-control')) }}
 			    {{$errors->first('categories', '<span class="help-block">:message</span>') }}
+		  	</div>
+		  	<div class="form-group">
+		  		{{ Form::label ('img', 'Upload Image') }}
+		  		{{ Form::file('img') }}
 		  	</div>
 			{{ Form::submit('Update Post', array('class' => 'btn btn-primary'))}}
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Delete Post</button>

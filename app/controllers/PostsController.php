@@ -66,7 +66,17 @@ class PostsController extends \BaseController {
     		$post->title = Input::get('title');
 			$post->content = Input::get('content');
 			$post->categories = Input::get('categories');
-			//$post->user_id = User::first()->id; if you have a foreign key
+			$post->user_id = User::first()->id;
+			$post->save();
+
+			if (Input::hasFile('img')) {
+				$img = Input::file('img');
+				$imgName = $post->id . '.' . $img->getClientOriginalExtension();
+				$systemPath = public_path() . '/uploads/';
+				$img->move($systemPath, $imgName);
+				$post->img_path = '/uploads/' . $imgName;
+				$post->save();
+			}
 
 			if($post->save()){
 				Session::flash('successMessage','Post was saved successfully!');
@@ -136,10 +146,20 @@ class PostsController extends \BaseController {
     		$post->title = Input::get('title');
 			$post->content = Input::get('content');
 			$post->categories = Input::get('categories');
-			//$post->user_id = User::first()->id; if you have a foreign key
+			$post->user_id = User::first()->id;
+			$post->save();
+
+			if (Input::hasFile('img')) {
+				$img = Input::file('img');
+				$imgName = $post->id . '.' . $img->getClientOriginalExtension();
+				$systemPath = public_path() . '/uploads/';
+				$img->move($systemPath, $imgName);
+				$post->img_path = '/uploads/' . $imgName;
+				$post->save();
+			}
 
 			if($post->save()){
-				Session::flash('successMessage','Post was saved!');
+				Session::flash('successMessage','Post was saved successfully!');
 				return Redirect::action('PostsController@show', $post->id);
 			} else {
 				Session::flash('errorMessage','Post was not saved.');
