@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-	Natalie's Resume
+	Home Page
 @stop
 
 @section ('favicon')
@@ -15,33 +15,6 @@
 @section('fonts')
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,600italic,700|Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
 @stop 
-
-@section('navbar')
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid navstyle">
-        <div class="navbar-header navstyle">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-brand navstyle" id="myname">Natalie Ortiz</div>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse navstyle">
-            <ul class="nav navbar-nav navstyle">
-                <li id="links"><a href="https://github.com/natalieortiz" title="Github"><i class="fa fa-github fa-lg"></i></a></li>
-                <li id="links"><a href="http://www.linkedin.com/in/ndnatalie" title="LinkedIn"><i class="fa fa-linkedin fa-lg"></i></a></li>
-            </ul>
-                <ul class="nav navbar-nav navbar-right navstyle">
-                    <li id="links"><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
-                </ul>
-            </li>
-          </ul
-        </div><!--/.nav-collapse -->
-      </div>>
-    </nav>
-@stop
 
 @section('content')
     <div class="row">
@@ -68,14 +41,9 @@
             <div class="col-md-12">
             <div class="row">
                 <div class="about_me col-md-10 col-md-offset-1">
-                <p>I am an aspiring web-developer who would like an entry level position in a team environment where I can grow my knowledge base and learn from senior developers.  I graduated with a degree in Management Information Systems from The University of Notre Dame.   However, my career after college went in a different direction.  Fortunately, Codeup has given me an opportunity to get back on track and prepare for that programming job I’ve always dreamed of.  During my time at Codeup, I’ve discovered that I have a passion for programming!  It can fun and frustrating all at the same time, but it’s such a great feeling when you are able to create something entirely your own.  I prefer back-end development like Javascript and PHP but as you can see from my portfolio page, I can also do full-stack development just as well. </p> 
- 
+                <p>I am an aspiring web-developer who would like an entry level position in a team environment where I can grow my knowledge base and learn from senior developers.  I graduated with a degree in Management Information Systems from The University of Notre Dame.   However, my career after college went in a different direction.  Fortunately, Codeup has given me an opportunity to get back on track and prepare for that programming job I’ve always dreamed of.  During my time at Codeup, I’ve discovered that I have a passion for programming!  It can fun and frustrating all at the same time, but it’s such a great feeling when you are able to <a href="{{{ action('HomeController@showPortfolio') }}}">create something</a> entirely your own.  I prefer back-end development like Javascript and PHP but as you can see from my portfolio page, I can also do full-stack development just as well. </p> 
                 <p>In my free time, I like traveling, eating out, spending time with family, cooking, watching British dramas and listening to music.  My preferred genres are pop & classic rock from the 60s and 70s as well as indie rock. </p> 
- 
                 <p>Having worked as a student manager for the Notre Dame Football Team, I love college football and to visit my alma mater for a home game.  I have made this an annual pilgrimage with family and friends to the beautiful campus I consider my second home.</p>    
-
-                <p>I'm a friendly, easy-going, positive individual who enjoys working on a team.   With a background in sales support, I'm a business-minded professional that derives satisfaction by seeing my contributions make an impact on a team or an overall goal. </p> 
-                </p>
                 </div>
             </div>
             </div>
@@ -117,6 +85,11 @@
                             <p class="skill">Coordinator</p>
                             <p class="skill">Detail-oriented</p>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="resume">
+                        <a href="{{{link_to_asset('NatalieOrtizResume.pdf')}}}">Resume</a>
                     </div>
                 </div>
             </div>

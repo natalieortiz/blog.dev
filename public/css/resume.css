@@ -5,9 +5,20 @@
     padding-top: 20px;
 }
 
+.about_me {
+    padding-bottom: 40px;
+}
+
+.about_me h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
 .apple img {
     padding-bottom: 9px;
 }
+
 body { 
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2em;
@@ -123,14 +134,6 @@ body {
 }
 .objective {
     background-color: rgb(140, 206,237); 
-    padding-top: 50px;
-    padding-bottom: 70px;
-}
-
-.objective p {
-    padding-left: 50px;
-    padding-bottom: 10px;
-    padding-right: 50px; 
 }
 
 .projects {

@@ -16,33 +16,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,600italic,700|Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
 @stop 
 
-@section('navbar')
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid navstyle">
-        <div class="navbar-header navstyle">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-brand navstyle" id="myname">Natalie Ortiz</div>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse navstyle">
-            <ul class="nav navbar-nav navstyle">
-                <li id="links"><a href="https://github.com/natalieortiz" title="Github"><i class="fa fa-github fa-lg"></i></a></li>
-                <li id="links"><a href="http://www.linkedin.com/in/ndnatalie" title="LinkedIn"><i class="fa fa-linkedin fa-lg"></i></a></li>
-            </ul>
-                <ul class="nav navbar-nav navbar-right navstyle">
-                    <li id="links"><a href="{{{ action('HomeController@showResume') }}}">Resume</a></li>
-                </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-@stop
-
 @section('content')
 	<div class="codestyle bg-1 row">
         <div class="col-md-12">
@@ -82,9 +55,9 @@
                     <p>A variation on a whack-a-mole style game where the user tries to click on as many "weenies" (dachshunds) as possible in order to get a high score.  A surprise pops up when a user gets the new high score.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="/img/placeholder.jpg">
-                    <h3>Future Project</h3>
-                    <p>Future project coming soon.</p>
+                    <img src="/img/peddlers.png">
+                    <h3>Peddler's Corner</h3>
+                    <p>Co-led a team of 3 to create a Craigslist clone where users are able to login, create, edit and delete ads.  Users also have an account page to see all their current ads. I create an admin login as well to allow an admin full-control of ads shown. Used HTML, PHP, and MySQL develop this project. </p>
                 </div>
                 <div class="col-md-4">
                     <img src="/img/placeholder.jpg">

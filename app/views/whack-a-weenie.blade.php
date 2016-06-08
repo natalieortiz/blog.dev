@@ -37,18 +37,24 @@
 <!-- body html -->
 <div class="container-fluid background">
 	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
 		<div class="heading">
 			<h1>Whack-a-Weenie</h1>
 			<p>(weenie dog!)</p>
 		</div>	
+		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-3">
 			<div class="row">
+				<div class="col-sm-xs-3 col-sm-3 ">
 				<button type="button" class="btn btn-primary btn-lg btn-success player_button" id="start">Start Game</button>
+				</div>
 			</div>
 			<div class="row">
+				<div class="col-sm-xs-3 col-sm-3">
 				<button type="button" class="btn btn-primary btn-lg btn-danger player_button" id="quit">Quit Game</button>
+				</div>
 			</div>
 			<div class="display">
 				<div class="score">
@@ -60,8 +66,12 @@
 					<div class="timer" id="timer">30</div>
 				</div>
 			</div>
+			<div class="high_score">
+				<h3>High Score</h3>
+				<div id="high_score"></div>
+			</div>
 		</div>
-		<div class="col-md-6">
+		<div class="col-xs-10 col-sm-10 col-md-6">
 			<div id="area">
 					<div class="hole" id="1"></div>
 					<div class="hole" id="2"></div>
@@ -74,20 +84,25 @@
 					<div class="hole" id="9"></div>
 			</div>
 		</div>
-		<div class="col-md-3">
-			<div class="high_score">
-				<h3>High Score</h3>
-				<div id="high_score"></div>
+		<div class="col-xs-12 col-md-3">
+			<div class="doghouse">
+				<img src="/img/dog house.png">
 			</div>
-			<div class="doghouse"><img src="/img/dog house.png"></div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-8 grass">
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12">
+		<div class="green">
+			<p>Created by Natalie Ortiz</p>
 		</div>
 	</div>
 </div>
 @stop
+
 
 @section('bottom-script')
 	<script src="/js/whackamole.js"></script>

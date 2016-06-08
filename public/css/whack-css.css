@@ -11,13 +11,11 @@
 }
 
 .background {
-	background: url(/img/backyard.jpg) no-repeat fixed;
-	width: auto;
-	height: auto;
+	background: rgb(105,207,255);
 }
 
 .display {
-	margin-top: 150px;
+	margin-top: 50px;
 	margin-left: 20px;
 	text-align: center;
 	width: 210px;
@@ -30,27 +28,43 @@
 
 .doghouse {
 	margin-top: 100px;
-	margin-right: 10px;
-	margin-bottom: 30px;
-
 }
 .grass{
 	height: 30px;
 }
+
+.green {
+	background-color: rgb(9,137,89);
+	height: 60px;
+	color: white;
+	text-align: center;
+}
+
+.green p {
+	padding-top: 20px;
+}
+
 .heading {
 	text-align: center;
 	color: white;
-	margin-bottom: 20px;
+	margin: auto;
 	font-family: 'Acme', sans-serif;
 	font-size: 20px;
+	background-color: rgb(9,137,89);
+	width: 500px;
+	padding-bottom: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
 }
 .heading h1{
+	padding-top: 15px;
 	font-size: 48px;
 }
 
 
 .high_score {
 	margin-top: 25px;
+	margin-left: 20px;
 	text-align: center;
 	width: 210px;
 	height: 120px;

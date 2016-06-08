@@ -17,7 +17,7 @@ Route::get('/', function()
 });
 
 
-Route::get('/resume', 'HomeController@showResume');
+Route::get('/home', 'HomeController@showResume');
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
 
