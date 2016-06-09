@@ -15,6 +15,7 @@
 body {
 	background-color: rgb(248,248,248);
 	background-image: url(/img/greyzz.png);
+	margin-bottom: 60px;
 }
 
 .btn {
@@ -115,8 +116,8 @@ main {
 
 .post {
 	background-color: white;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	padding-bottom: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -139,6 +140,44 @@ main {
 	margin-right: 20px;
 	margin-bottom: 10px;
 }
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: rgb(2,128,144);
+  color: white; 
+  
+}
+
+.footer p {
+	color: white; 
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted{
+  margin: 20px 0;
+  text-align: center;
+}
+
 
 
 @media (max-width: @screen-sm-max) { 

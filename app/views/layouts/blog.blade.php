@@ -59,6 +59,12 @@
 
 	@yield('content')
 
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Created by Natalie Ortiz</p>
+      </div>
+    </footer>
+
 
 	    <!-- Bootstrap core JavaScript
     ================================================== -->
