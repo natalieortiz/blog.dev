@@ -75,20 +75,7 @@ body {
     font-size: 1em; 
 }
 
-.footer {
-    padding-left: 15px;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: 1em;
-    background-color: rgb(16,37,66);
-}
 
-.footer h3 {s
-    text-align: left;
-    font-family: 'Sorts Mill Goudy', serif;
-    text-decoration: underline;
-}
 
 #forcedcolor{
     background-color: rgb(16,37,66)
@@ -231,23 +218,30 @@ body {
     vertical-align: middle;
 }
 
-/*.downarrow {
-    margin-top: 450px;
-    margin-left: 90%;
-    padding-top: 5px;
-    text-align: center;
-    height: 50px;
-    width: 50px;
-    background-color: rgb(245,105,86);
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-    font-size: 1.5em;
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  color: white;
+  background-color: rgb(16,37,66); 
+  
 }
 
-.downarrow:hover {
-    background-color: rgb(179,163,148);
-}*/
-
+.footer {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    
+}
 
 --------
 

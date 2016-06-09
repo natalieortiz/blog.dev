@@ -44,6 +44,13 @@
 	<main class="container-fluid">
 		@yield('content')
 	</main>
+    <footer>
+        <div class="contact footer">
+                 Natalie Ortiz |
+                 ndnatalie@gmail.com | 
+                (210) 744-2384
+        </div> 
+    </footer>
 
 	    <!-- Bootstrap core JavaScript
     ================================================== -->

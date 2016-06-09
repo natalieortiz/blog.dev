@@ -135,13 +135,5 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="row footer contact">
-        <div class="col-md-12">
-             Natalie Ortiz |
-             ndnatalie@gmail.com | 
-            (210) 744-2384
-        </div>
-    </div>       
+    </div>      
 @stop	
