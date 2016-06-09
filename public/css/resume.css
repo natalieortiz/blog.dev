@@ -9,6 +9,11 @@
     padding-bottom: 40px;
 }
 
+.about_me p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .about_me h3 {
     text-align: center;
     color: white;
@@ -155,6 +160,12 @@ body {
 }
 
 .rackspace img{
+    padding-bottom: 20px;
+}
+
+.resume {
+    text-align: center;
+    font-size: 1.3em;
     padding-bottom: 20px;
 }
 

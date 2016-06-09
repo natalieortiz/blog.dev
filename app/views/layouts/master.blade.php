@@ -33,6 +33,7 @@
                 <ul class="nav navbar-nav navbar-right navstyle">
                     <li id="links"><a href="{{{ action('HomeController@showResume') }}}">Home</a></li>
                     <li id="links"><a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a></li>
+                    <li id="links"><a href="/files/NatalieOrtizResume.pdf">Resume</a></li>
                     <li id="links"><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
                 </ul>
             </li>

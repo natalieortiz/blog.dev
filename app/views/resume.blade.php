@@ -41,7 +41,7 @@
             <div class="col-md-12">
             <div class="row">
                 <div class="about_me col-md-10 col-md-offset-1">
-                <p>I am an aspiring web-developer who would like an entry level position in a team environment where I can grow my knowledge base and learn from senior developers.  I graduated with a degree in Management Information Systems from The University of Notre Dame.   However, my career after college went in a different direction.  Fortunately, Codeup has given me an opportunity to get back on track and prepare for that programming job I’ve always dreamed of.  During my time at Codeup, I’ve discovered that I have a passion for programming!  It can fun and frustrating all at the same time, but it’s such a great feeling when you are able to <a href="{{{ action('HomeController@showPortfolio') }}}">create something</a> entirely your own.  I prefer back-end development like Javascript and PHP but as you can see from my portfolio page, I can also do full-stack development just as well. </p> 
+                <p>I am an aspiring web developer who would like an entry-level position in a team environment where I can grow my knowledge base and learn from senior developers.  I graduated with a degree in Management Information Systems from The University of Notre Dame.   However, my career after college went in a different direction.  Fortunately, Codeup has given me an opportunity to get back on track and prepare for that technical job I’ve always wanted.  During my time at Codeup, I’ve discovered that I have a passion for programming!  It can fun and frustrating all at the same time, but it’s such a great feeling when you are able to <a href="{{{ action('HomeController@showPortfolio') }}}">create something</a> entirely your own.  I prefer back-end development like Javascript and PHP but as you can see from my portfolio page, I can do full-stack development just as well. </p> 
                 <p>In my free time, I like traveling, eating out, spending time with family, cooking, watching British dramas and listening to music.  My preferred genres are pop & classic rock from the 60s and 70s as well as indie rock. </p> 
                 <p>Having worked as a student manager for the Notre Dame Football Team, I love college football and to visit my alma mater for a home game.  I have made this an annual pilgrimage with family and friends to the beautiful campus I consider my second home.</p>    
                 </div>
@@ -51,6 +51,12 @@
     </div>
     
     <div class="skills">
+        <h2 class="skills_heading">Resume</h2>
+        <div class="col-md-10 col-md-offset-1">
+            <div class="resume">
+                <a href="/files/NatalieOrtizResume.pdf">Click Here to View or Download My Resume</a>
+            </div>
+        </div> 
         <h2 class="skills_heading">Skills</h2>    
         <div class="row box_spacer">
             <div class="col-md-10 col-md-offset-1">
@@ -60,7 +66,7 @@
                         <h3><strong>Front-End</strong></h3>
                         <p class="skill">HTML</p>
                         <p class="skill">CSS</p>
-                        <p class="skill">Bootstrap</p>
+                        <p class="skill">Twitter Bootstrap</p>
                         <p class="skill">Javascript</p>
                         <p class="skill">JQuery</p>
                     </div>
@@ -85,11 +91,6 @@
                             <p class="skill">Coordinator</p>
                             <p class="skill">Detail-oriented</p>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="resume">
-                        <a href="{{{link_to_asset('NatalieOrtizResume.pdf')}}}">Resume</a>
                     </div>
                 </div>
             </div>
