@@ -22,7 +22,13 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{	
-		$posts = Post::paginate(4); 
+
+		if(Input::has('q')){
+		$searchTerm = Input::get('q');
+		$posts = Post::where('content', 'like', "%{$searchTerm}%")->orWhere('categories','like',"%{$searchTerm}%")->orWhere('title','like',"%{$searchTerm}%")->paginate(4);
+		} else {
+			$posts = Post::paginate(4);
+		}
 
 		//If you want to use eager loading; 
 		// $posts = Post::with('User')->get();

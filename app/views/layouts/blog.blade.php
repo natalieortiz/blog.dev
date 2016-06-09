@@ -9,6 +9,7 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/blog.css">
 
 
@@ -32,20 +33,29 @@
     <ul class="nav navbar-nav">
     </ul>
 		<ul class="nav navbar-nav navbar-right">
-		@if (!Auth::check()) 
-			<li><a href="{{{ action('HomeController@loginForm') }}}">Login</a></li>
-		@endif 
-		<li><a href="{{{ action('PostsController@index') }}}">Home</a></li>
-		@if (Auth::check()) 
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
-			  <ul class="dropdown-menu">
-			    <li><a href="{{{ action('PostsController@create') }}}">Create a Post</a></li>
-			    <li role="separator" class="divider"></li>
-			    <li><a href="{{{ action('HomeController@doLogout') }}}">Logout</a></li>
-			  </ul>
-			</li>
-		@endif 
+			<li><a href="{{{ action('HomeController@showResume') }}}"><i class="fa fa-home fa-lg"></i></a></li>
+			<li><a href="{{{ action('PostsController@index') }}}"></i>All Posts</a></li>
+			@if (!Auth::check()) 
+				<li><a href="{{{ action('HomeController@loginForm') }}}">Login</a></li>
+			@endif 
+			@if (Auth::check()) 
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+				    <li><a href="{{{ action('PostsController@create') }}}">Create a Post</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="{{{ action('HomeController@doLogout') }}}">Logout</a></li>
+				  </ul>
+				</li>
+			@endif 
+			<li>
+			<form action="{{{ action('PostsController@index') }}}" class="navbar-form">
+	        <div class="form-group">
+	          <input type="text" class="form-control" name="q" placeholder="Search Posts">
+	        </div>
+	        <button type="submit" class="btn btn-default btn_search"><i class="fa fa-search" aria-hidden="true"></i></button>
+		</form>
+		</li>
 		</ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
