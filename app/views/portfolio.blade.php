@@ -55,14 +55,14 @@
                     <p>A variation on a whack-a-mole style game where the user tries to click on as many "weenies" (dachshunds) as possible in order to get a high score.  A surprise pops up when a user gets the new high score.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="/img/peddlers.png">
+                    <a href="http://peddlerscorner.ndnatalie.com/"><img src="/img/peddlers.png"></a>
                     <h3><a href="http://peddlerscorner.ndnatalie.com/">Peddler's Corner</a></h3>
                     <p>Co-led a team of 3 to create a Craigslist clone where users are able to login, create, edit and delete ads.  Users also have an account page to see all their current ads. I create an admin login as well to allow an admin full-control of ads shown. Used HTML, PHP, and MySQL develop this project. </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="/img/placeholder.jpg">
-                    <h3>Future Project</h3>
-                    <p>Future project coming soon.</p>
+                    <a href="{{{ action('PostsController@index') }}}"><img src="/img/blog.png"></a>
+                    <h3><a href="{{{ action('PostsController@index') }}}">Personal Blog</a></h3>
+                    <p>Using the PHP Laravel framework, this is a personal blog that incorporates account login and logout, creating, editing, and deleting a blog post, and a search bar at the top.  It also utilizes Twitter Bootstrap, HTML, and CSS.</p>
                 </div>
             </div>
     </div>      

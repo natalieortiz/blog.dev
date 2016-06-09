@@ -30,9 +30,6 @@ class PostsController extends \BaseController {
 			$posts = Post::paginate(4);
 		}
 
-		//If you want to use eager loading; 
-		// $posts = Post::with('User')->get();
-
 		return View::make('posts.index')->with('posts', $posts);
 	}
 
