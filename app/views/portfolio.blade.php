@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-md-4">
                     <img src="/img/peddlers.png">
-                    <h3>Peddler's Corner</h3>
+                    <h3><a href="http://peddlerscorner.ndnatalie.com/">Peddler's Corner</a></h3>
                     <p>Co-led a team of 3 to create a Craigslist clone where users are able to login, create, edit and delete ads.  Users also have an account page to see all their current ads. I create an admin login as well to allow an admin full-control of ads shown. Used HTML, PHP, and MySQL develop this project. </p>
                 </div>
                 <div class="col-md-4">

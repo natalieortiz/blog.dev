@@ -97,6 +97,21 @@ main {
 	color: rgb(2,128,144);
 }
 
+.navbar-default .navbar-brand a {
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;	
+	color: rgb(2,128,144);
+}
+
+.navbar-default .navbar-brand a:hover {
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;	
+	color: rgb(2,128,144);
+	text-decoration: none;
+}
+
 .navbar-default .navbar-brand:hover {
 	color: rgb(2,128,144);
 }

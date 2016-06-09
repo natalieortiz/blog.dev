@@ -24,7 +24,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div class="navbar-brand">Natalie Ortiz</div>
+      <div class="navbar-brand"><a href="{{{ action('HomeController@showResume') }}}">Natalie Ortiz</a></div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
