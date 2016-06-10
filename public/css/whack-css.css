@@ -18,8 +18,8 @@
 
 .display {
 	margin-top: 25px;
-	margin: auto;
 	margin-bottom: 20px;
+	margin-left: 20px;
 	text-align: center;
 	width: 210px;
 	height: 120px;
@@ -51,8 +51,8 @@
 
 .high_score {
 	margin-top: 25px;
-	margin: auto;
 	margin-bottom: 20px;
+	margin-left: 20px;
 	text-align: center;
 	width: 210px;
 	height: 120px;
@@ -89,6 +89,7 @@
 	margin: auto;
 	margin-bottom: 10px;
 	width: 100px;
+	margin-left: 20px;
 }
 .score {
 	float: left;
@@ -110,6 +111,12 @@
 }
 
 @media only screen and (min-width: 900px){
+	#area {
+		width: 450px;
+		height: 450px;
+		background: rgba(255,255,255,.5);
+		margin: 20px;
+	}
 	.background {
 		background: url(/img/backyard.jpg) no-repeat fixed;
 	}
@@ -125,18 +132,19 @@
 		border-radius: 5px;	
 		border: solid 4px rgb(255,192,36);
 	}
-	#area {
-		width: 450px;
-		height: 450px;
-		background: rgba(255,255,255,.5);
-		margin: auto;
-	}
-
 	.doghouse {
-	margin-top: 150px;
-	margin-bottom: 30px;
-
+		margin-top: 150px;
+		margin-bottom: 30px;
 	}
+
+	.hole{
+		width: 150px;
+		height: 150px;
+		border: dotted 1px;
+		border-color: light grey;
+		float: left;
+	}
+
 
 	.high_score {
 		margin-top: 25px;
