@@ -7,7 +7,7 @@
 	width: 450px;
 	height: 450px;
 	background: rgba(255,255,255,.5);
-	margin: auto;
+	margin: 20px;
 }
 
 .background {
@@ -17,8 +17,9 @@
 }
 
 .display {
-	margin-top: 150px;
-	margin-left: 20px;
+	margin-top: 25px;
+	margin: auto;
+	margin-bottom: 20px;
 	text-align: center;
 	width: 210px;
 	height: 120px;
@@ -29,9 +30,8 @@
 }
 
 .doghouse {
-	margin-top: 100px;
-	margin-right: 10px;
-	margin-bottom: 30px;
+	margin: auto;
+
 
 }
 .grass{
@@ -51,7 +51,8 @@
 
 .high_score {
 	margin-top: 25px;
-	margin-left: 20px;
+	margin: auto;
+	margin-bottom: 20px;
 	text-align: center;
 	width: 210px;
 	height: 120px;
@@ -85,9 +86,9 @@
 }
 
 .player_button {
-	margin-top: 10px;
-	margin-left: 60px;
-	width: 150px;
+	margin: auto;
+	margin-bottom: 10px;
+	width: 100px;
 }
 .score {
 	float: left;
@@ -102,8 +103,72 @@
 }
 
 .green {
-	background-color: rgb(9,137,89);
+	background-color: rgb(86,147,54);
 	height: 60px;
 	color: white;
 	text-align: center;
 }
+
+@media only screen and (min-width: 900px){
+	.background {
+		background: url(/img/backyard.jpg) no-repeat fixed;
+	}
+
+	.display {
+		margin-top: 150px;
+		margin-left: 20px;
+		text-align: center;
+		width: 210px;
+		height: 120px;
+		color: white;
+		background: rgb(48,144,192);
+		border-radius: 5px;	
+		border: solid 4px rgb(255,192,36);
+	}
+	#area {
+		width: 450px;
+		height: 450px;
+		background: rgba(255,255,255,.5);
+		margin: auto;
+	}
+
+	.doghouse {
+	margin-top: 150px;
+	margin-bottom: 30px;
+
+	}
+
+	.high_score {
+		margin-top: 25px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+		width: 210px;
+		height: 120px;
+		color: white;
+		background: rgb(48,144,192);
+		border-radius: 5px;	
+		border: solid 4px rgb(255,192,36);
+	}
+
+	.player_button {
+		margin-top: 10px;
+		margin-left: 60px;
+		width: 150px;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.background {
+		background: url(/img/paw-print.png);
+	}
+
+	.heading {
+	text-align: center;
+	color: black;
+	margin-bottom: 20px;
+	font-family: 'Acme', sans-serif;
+	font-size: 1.2em;
+}
+
+}	
