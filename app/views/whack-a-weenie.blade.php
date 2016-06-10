@@ -71,7 +71,7 @@
 				<div id="high_score"></div>
 			</div>
 		</div>
-		<div class="col-xs-10 col-sm-10 col-md-6">
+		<div class="col-xs-8 col-sm-8 col-md-6">
 			<div id="area">
 					<div class="hole" id="1"></div>
 					<div class="hole" id="2"></div>
@@ -94,13 +94,12 @@
 <div class="row">
 
 </div>
-<div class="row">
-	<div class="col-xs-12 col-sm-12 col-md-12">
-		<div class="green">
+
+<footer>
+	<div class="green">
 			<p>Created by Natalie Ortiz</p>
-		</div>
 	</div>
-</div>
+</footer>
 @stop
 
 
