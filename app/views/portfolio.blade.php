@@ -20,7 +20,7 @@
 	<div class="codestyle bg-1 row">
         <div class="col-md-12">
         <h1 class="mainheading">Portfolio</h1>
-        <p>Below is a listing of projects I created during my time at Codeup.  Utilizing the full-stack curriculum, the projects below are made with HTML, CSS, Javascript and jQuery.  I will be adding additional projects created with MySQL and PHP as well. </p> 
+        <p>Below is a listing of projects I created during my time at Codeup.  Utilizing the full-stack curriculum, the projects below are made with LAMP stack technologies - HTML, CSS, Javascript, jQuery, MySQL, PHP and Laravel Framework. 
         </div>  
     </div>
 
@@ -36,7 +36,7 @@
                 <div class="col-md-4">
                     <a href="{{{ action('GameController@showWeather') }}}" title="Weather Map">
                     <img src="/img/weathermap.png"></a>
-                    <h3><a href="{{{ action('GameController@showWeather') }}}">Weather Map Site</a></h3>
+                    <h3><a href="{{{ action('GameController@showWeather') }}}">Weather Finder Map</a></h3>
                     <p>The user can find the 3-day weather forecast my dragging and dropping the map marker on any location.  This projects uses a Google Maps API in conjunction with a weather API in order to access weather information in any location.  A search function is also utilizes Google maps to geocode a location entered by the user.  
                     </p>
                  </div>
@@ -52,7 +52,7 @@
                     <a href="{{{ action('GameController@showWhack') }}}" title="Whack-a-Weenie">
                     <img src="/img/whackaweenie.png"></a>
                     <h3><a href="{{{ action ('GameController@showWhack') }}}">Whack-a-Weenie</a></h3>
-                    <p>A variation on a whack-a-mole style game where the user tries to click on as many "weenies" (dachshunds) as possible in order to get a high score.  A surprise pops up when a user gets the new high score.</p>
+                    <p>A variation on a whack-a-mole style game where the user tries to click on as many "weenies" (dachshunds) as possible in order to get a high score.  A surprise pops up when a user gets the new high score.  This site is designed to be played on a desktop or laptop.</p>
                 </div>
                 <div class="col-md-4">
                     <a href="http://peddlerscorner.ndnatalie.com/"><img src="/img/peddlers.png"></a>

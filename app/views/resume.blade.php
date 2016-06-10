@@ -78,6 +78,7 @@
                         <p class="skill">PHP</p>
                         <p class="skill">MySQL</p>
                         <p class="skill">Laravel</p>
+                        <p class="skill">Git & GitHub</p>
                     </div>
                 </div>
 
