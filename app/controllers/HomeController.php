@@ -71,5 +71,5 @@ class HomeController extends BaseController {
 		return Redirect::action('HomeController@doLogin');
 	}
 
-	
+
 }

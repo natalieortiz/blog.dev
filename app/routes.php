@@ -36,6 +36,9 @@ Route::post('/login', 'HomeController@doLogin');
 
 Route::get('/logout', 'HomeController@doLogout');
 
+//For Capstone
+Route::get('/dashboard', 'HomeController@showDashboard');
+
 
 
 

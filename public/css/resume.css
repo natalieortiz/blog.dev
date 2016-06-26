@@ -34,6 +34,22 @@ body {
     padding-bottom: 70px;
 }
 
+.capstone {
+    color: rgb(16,37,66);
+}
+
+.capstone h2{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.car_size {
+    margin-top: 20px;
+    width: 100%;
+}
+
 .codestyle {
     background-color: rgb(245,105,86); 
     padding-top: 70px;
@@ -83,6 +99,10 @@ body {
 
 .headshot img{
     width: 200px;
+}
+
+.carousel-caption {
+
 }
 
 #links a:link {
