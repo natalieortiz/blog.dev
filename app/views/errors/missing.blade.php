@@ -8,7 +8,7 @@
 @section('content')
 <main class="container">
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-sm-10 col-md-10 col-md-offset-1">
 			<div class="missing_area">
 				<h1>Oh no!  Page is not found!</h1>
 				<img src="/img/kool-aid-man.gif">
