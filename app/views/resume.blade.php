@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <h1 class="name">Natalie Ortiz</h1>
-                    <p>Full-stack bootcamp graduate seeks entry into a software developer role while utilizing a business degree in Management Information Systems from the University of Notre Dame and 7+ years in the tech industry.
+                    <p>Full-stack bootcamp graduate seeks entry into an IT Project Management role while utilizing a business degree in Management Information Systems from the University of Notre Dame and 7+ years in the tech industry.
                     </p>
                 </div>
             </div>
@@ -39,13 +39,13 @@
     <h1 class="about_me_heading">About Me</h1>
         <div class="row">
             <div class="col-md-12">
-            <div class="row">
-                <div class="about_me col-md-10 col-md-offset-1">
-                <p>I am an aspiring web developer who would like an entry-level position in a team environment where I can grow my knowledge base and learn from senior developers.  I graduated with a degree in Management Information Systems from The University of Notre Dame.   However, my career after college went in a different direction.  Fortunately, Codeup has given me an opportunity to get back on track and prepare for that technical job I’ve always wanted.  Please visit my <a href="{{{ action('HomeController@showPortfolio') }}}">portfolio</a> to see the projects that I created during my time at Codeup.  I prefer back-end development like Javascript and PHP but as you can see from my portfolio page, I can do full-stack development just as well. </p> 
-                <p>In my free time, I like traveling, eating out, spending time with family, cooking, watching British dramas and listening to music.  My preferred genres are pop & classic rock from the 60s and 70s as well as indie rock. </p> 
-                <p>Having worked as a student manager for the Notre Dame Football Team, I love college football and to visit my alma mater for a home game.  I have made this an annual pilgrimage with family and friends to the beautiful campus I consider my second home.</p>    
+                <div class="row">
+                    <div class="about_me col-md-10 col-md-offset-1">
+                        <p>I am an aspiring IT project manager seeking an operational or project support role in IT or software development.  I’ve had 7+ years in the tech industry but was never able to crack that role in a more technical type of career.  I graduated with a degree in Management Information Systems from The University of Notre Dame.  However, my career after college went in a different direction.  Fortunately, Codeup has given me an opportunity to get back on track and prepare for that technical job I’ve always wanted.  Coding has also provided that outlet for my need to learn along with my need to create.  Web design and web development are a new and deepening interest for me.  As you can see from my  <a href="{{{ action('HomeController@showPortfolio') }}}">portfolio</a> I’ve been able to create full-stack projects that allowed me to learn front-end and back-end development. </p>  
+                        <p>In my free time, I like traveling, eating out, spending time with family, cooking, watching British dramas and listening to music.  My preferred genres are pop & classic rock from the 60s and 70s as well as indie rock. </p> 
+                        <p>Having worked as a student manager for the Notre Dame Football Team, I love college football and to visit my alma mater for a home game.  I have made this an annual pilgrimage with family and friends to the beautiful campus I consider my second home.</p>    
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
